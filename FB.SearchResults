@@ -1,0 +1,6 @@
+---- first_init Matches (5 in 0 files) ----
+Main.c (user):static u8 first_init=1;
+Main.c (user):if(first_init==1)
+Main.c (user):first_init=0;
+Main.c (user):if(first_init==1)
+Main.c (user):first_init=0;
