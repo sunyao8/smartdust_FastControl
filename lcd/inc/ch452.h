@@ -102,7 +102,7 @@ void init_light_off(void);
 void Light_pad_on(u8 comm_dis,u8 num,u8 status_1,u8 status_2,u8 status_3);
 void Light_pad_twinkle(u8 comm_dis ,u8 num,u8 status_1,u8 status_2,u8 status_3,u16 time);
 void Light_pad_off(u8 comm_dis ,u8 num,u8 status_1,u8 status_2,u8 status_3);
-
+void Light_pad_on_smartdust( u8 num,u8 on_off);
 
 
 

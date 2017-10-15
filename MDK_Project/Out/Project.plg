@@ -8,389 +8,10 @@ Project File Date:  01/15/2016
 
 <h2>Output:</h2>
 Build target 'Target 1'
-compiling key.c...
-..\lcd\src\key.c(239): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(276): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(699): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_shiwei" was set but never used
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_gewei" was set but never used
-..\lcd\src\key.c(777): warning:  #177-D: variable "num1_5Seg" was declared but never referenced
-..\lcd\src\key.c(778): warning:  #177-D: variable "num6_12Seg" was declared but never referenced
 linking...
-Program Size: Code=58864 RO-data=27048 RW-data=304 ZI-data=21848  
-FromELF: creating hex file...
-".\Out\Project.axf" - 0 Error(s), 7 Warning(s).
-Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
-* JLink Info: Device "STM32F407VE" selected.
-Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.96 , compiled Dec 22 2014 09:51:48
-Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
-Hardware: V7.00
-S/N : 20160403 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VE
-VTarget = 3.300V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Build target 'Target 1'
-compiling key.c...
-..\lcd\src\key.c(239): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(276): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(701): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_shiwei" was set but never used
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_gewei" was set but never used
-..\lcd\src\key.c(779): warning:  #177-D: variable "num1_5Seg" was declared but never referenced
-..\lcd\src\key.c(780): warning:  #177-D: variable "num6_12Seg" was declared but never referenced
-linking...
-Program Size: Code=58872 RO-data=27048 RW-data=304 ZI-data=21848  
-FromELF: creating hex file...
-".\Out\Project.axf" - 0 Error(s), 7 Warning(s).
-Build target 'Target 1'
-compiling key.c...
-..\lcd\src\key.c(239): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(276): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(701): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_shiwei" was set but never used
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_gewei" was set but never used
-..\lcd\src\key.c(779): warning:  #177-D: variable "num1_5Seg" was declared but never referenced
-..\lcd\src\key.c(780): warning:  #177-D: variable "num6_12Seg" was declared but never referenced
-linking...
-Program Size: Code=58872 RO-data=27048 RW-data=304 ZI-data=21848  
-FromELF: creating hex file...
-".\Out\Project.axf" - 0 Error(s), 7 Warning(s).
-Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
-* JLink Info: Device "STM32F407VE" selected.
-Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.96 , compiled Dec 22 2014 09:51:48
-Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
-Hardware: V7.00
-S/N : 20160403 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VE
-VTarget = 3.300V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Build target 'Target 1'
-compiling key.c...
-..\lcd\src\key.c(239): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(276): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(701): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_shiwei" was set but never used
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_gewei" was set but never used
-..\lcd\src\key.c(779): warning:  #177-D: variable "num1_5Seg" was declared but never referenced
-..\lcd\src\key.c(780): warning:  #177-D: variable "num6_12Seg" was declared but never referenced
-linking...
-Program Size: Code=58872 RO-data=27048 RW-data=304 ZI-data=21848  
-FromELF: creating hex file...
-".\Out\Project.axf" - 0 Error(s), 7 Warning(s).
-Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
-* JLink Info: Device "STM32F407VE" selected.
-Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.96 , compiled Dec 22 2014 09:51:48
-Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
-Hardware: V7.00
-S/N : 20160403 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VE
-VTarget = 3.300V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Build target 'Target 1'
-compiling key.c...
-..\lcd\src\key.c(239): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(276): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(701): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_shiwei" was set but never used
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_gewei" was set but never used
-..\lcd\src\key.c(777): warning:  #177-D: variable "num1_5Seg" was declared but never referenced
-..\lcd\src\key.c(778): warning:  #177-D: variable "num6_12Seg" was declared but never referenced
-linking...
-Program Size: Code=58864 RO-data=27048 RW-data=304 ZI-data=21848  
-FromELF: creating hex file...
-".\Out\Project.axf" - 0 Error(s), 7 Warning(s).
-Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
-* JLink Info: Device "STM32F407VE" selected.
-Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.96 , compiled Dec 22 2014 09:51:48
-Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
-Hardware: V7.00
-S/N : 20160403 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VE
-VTarget = 3.300V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Build target 'Target 1'
-compiling key.c...
-..\lcd\src\key.c(239): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(276): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_shiwei" was set but never used
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_gewei" was set but never used
-..\lcd\src\key.c(106): warning:  #177-D: variable "count" was declared but never referenced
-..\lcd\src\key.c(692): warning:  #177-D: variable "num1_5Seg" was declared but never referenced
-..\lcd\src\key.c(693): warning:  #177-D: variable "num6_12Seg" was declared but never referenced
-linking...
-Program Size: Code=57960 RO-data=27048 RW-data=304 ZI-data=21848  
-FromELF: creating hex file...
-".\Out\Project.axf" - 0 Error(s), 7 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: Code=57960 RO-data=27048 RW-data=304 ZI-data=21848  
+Program Size: Code=56012 RO-data=27044 RW-data=308 ZI-data=21852  
 FromELF: creating hex file...
 ".\Out\Project.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
-* JLink Info: Device "STM32F407VE" selected.
-Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.96 , compiled Dec 22 2014 09:51:48
-Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
-Hardware: V7.00
-S/N : 20160403 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VE
-VTarget = 3.300V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Build target 'Target 1'
-compiling key.c...
-..\lcd\src\key.c(239): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(276): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(700): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(742): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_shiwei" was set but never used
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_gewei" was set but never used
-..\lcd\src\key.c(795): warning:  #177-D: variable "num1_5Seg" was declared but never referenced
-..\lcd\src\key.c(796): warning:  #177-D: variable "num6_12Seg" was declared but never referenced
-linking...
-Program Size: Code=58944 RO-data=27048 RW-data=304 ZI-data=21848  
-FromELF: creating hex file...
-".\Out\Project.axf" - 0 Error(s), 8 Warning(s).
-Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
-* JLink Info: Device "STM32F407VE" selected.
-Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.96 , compiled Dec 22 2014 09:51:48
-Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
-Hardware: V7.00
-S/N : 20160403 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VE
-VTarget = 3.300V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Build target 'Target 1'
-compiling key.c...
-..\lcd\src\key.c(239): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(276): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(700): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(727): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_shiwei" was set but never used
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_gewei" was set but never used
-..\lcd\src\key.c(781): warning:  #177-D: variable "num1_5Seg" was declared but never referenced
-..\lcd\src\key.c(782): warning:  #177-D: variable "num6_12Seg" was declared but never referenced
-linking...
-Program Size: Code=58888 RO-data=27048 RW-data=304 ZI-data=21848  
-FromELF: creating hex file...
-".\Out\Project.axf" - 0 Error(s), 8 Warning(s).
-Build target 'Target 1'
-compiling key.c...
-..\lcd\src\key.c(239): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(276): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(700): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(727): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_shiwei" was set but never used
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_gewei" was set but never used
-..\lcd\src\key.c(781): warning:  #177-D: variable "num1_5Seg" was declared but never referenced
-..\lcd\src\key.c(782): warning:  #177-D: variable "num6_12Seg" was declared but never referenced
-linking...
-Program Size: Code=58888 RO-data=27048 RW-data=304 ZI-data=21848  
-FromELF: creating hex file...
-".\Out\Project.axf" - 0 Error(s), 8 Warning(s).
-Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
-* JLink Info: Device "STM32F407VE" selected.
-Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.96 , compiled Dec 22 2014 09:51:48
-Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
-Hardware: V7.00
-S/N : 20160403 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found SWD-DP with ID 0x2BA01477
-* JLink Info: Found Cortex-M4 r0p1, Little endian.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F407VE
-VTarget = 3.300V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Build target 'Target 1'
-compiling key.c...
-..\lcd\src\key.c(239): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(276): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(687): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(704): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_shiwei" was set but never used
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_gewei" was set but never used
-..\lcd\src\key.c(783): warning:  #177-D: variable "num1_5Seg" was declared but never referenced
-..\lcd\src\key.c(784): warning:  #177-D: variable "num6_12Seg" was declared but never referenced
-linking...
-Program Size: Code=58896 RO-data=27048 RW-data=304 ZI-data=21848  
-FromELF: creating hex file...
-".\Out\Project.axf" - 0 Error(s), 8 Warning(s).
 Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
 * JLink Info: Device "STM32F407VE" selected.
 Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
@@ -433,47 +54,767 @@ compiling main.c...
 ..\User\main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
 ..\User\main.c(187): warning:  #1295-D: Deprecated declaration init_cap - give arg types
 ..\User\main.c(231): warning:  #177-D: variable "os_err" was declared but never referenced
-..\User\main.c(786): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
-..\User\main.c(1263): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-..\User\main.c(1283): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-..\User\main.c(1498): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-..\User\main.c(1510): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-..\User\main.c(1645): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-..\User\main.c(1657): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-..\User\main.c(1803): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-..\User\main.c(1816): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-..\User\main.c(1085): warning:  #550-D: variable "status" was set but never used
-..\User\main.c(1103): warning:  #177-D: variable "gl" was declared but never referenced
-..\User\main.c(1104): warning:  #550-D: variable "wugongkvar_95" was set but never used
-..\User\main.c(1118): warning:  #550-D: variable "ON_HOLD_para" was set but never used
-..\User\main.c(1120): warning:  #550-D: variable "DELAY_ON_para" was set but never used
-..\User\main.c(1121): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
-compiling uctsk_Task.c...
-compiling uctsk_OSView.c...
-compiling stm32f4xx_it.c...
-compiling os_cpu_c.c...
-compiling OS_AppHooks.c...
-compiling os_view.c...
-compiling os_viewc.c...
-compiling GUI_X_uCOS.c...
-compiling GUI_X_Touch.c...
-compiling delay.c...
-compiling ht1621.c...
-..\lcd\src\ht1621.c(554): warning:  #177-D: variable "num12dpSeg" was declared but never referenced
-..\lcd\src\ht1621.c(643): warning:  #177-D: variable "num12dpSeg" was declared but never referenced
-..\lcd\src\ht1621.c(734): warning:  #177-D: variable "num12dpSeg" was declared but never referenced
-..\lcd\src\ht1621.c(825): warning:  #177-D: variable "num12dpSeg" was declared but never referenced
-compiling key.c...
-..\lcd\src\key.c(239): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(276): warning:  #186-D: pointless comparison of unsigned integer with zero
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_shiwei" was set but never used
-..\lcd\src\key.c(105): warning:  #550-D: variable "capa2_value_gewei" was set but never used
-..\lcd\src\key.c(783): warning:  #177-D: variable "num1_5Seg" was declared but never referenced
-..\lcd\src\key.c(784): warning:  #177-D: variable "num6_12Seg" was declared but never referenced
+..\User\main.c(444): warning:  #550-D: variable "status_2" was set but never used
+..\User\main.c(444): warning:  #550-D: variable "status_3" was set but never used
+..\User\main.c(784): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+..\User\main.c(1261): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1264): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1282): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1500): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1501): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1513): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1648): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1649): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1661): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1806): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1807): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1820): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1083): warning:  #550-D: variable "status" was set but never used
+..\User\main.c(1100): warning:  #177-D: variable "phase" was declared but never referenced
+..\User\main.c(1101): warning:  #177-D: variable "gl" was declared but never referenced
+..\User\main.c(1102): warning:  #550-D: variable "wugongkvar_95" was set but never used
+..\User\main.c(1116): warning:  #550-D: variable "ON_HOLD_para" was set but never used
+..\User\main.c(1118): warning:  #550-D: variable "DELAY_ON_para" was set but never used
+..\User\main.c(1119): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
 linking...
-Program Size: Code=58896 RO-data=27048 RW-data=304 ZI-data=21848  
+Program Size: Code=56036 RO-data=27044 RW-data=308 ZI-data=21852  
 FromELF: creating hex file...
-".\Out\Project.axf" - 0 Error(s), 30 Warning(s).
+".\Out\Project.axf" - 0 Error(s), 27 Warning(s).
+Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
+* JLink Info: Device "STM32F407VE" selected.
+Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.96 , compiled Dec 22 2014 09:51:48
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20160403 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+..\User\main.c(65): warning:  #1295-D: Deprecated declaration App_TaskLCD - give arg types
+..\User\main.c(66): warning:  #1295-D: Deprecated declaration sort_list - give arg types
+..\User\main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
+..\User\main.c(187): warning:  #1295-D: Deprecated declaration init_cap - give arg types
+..\User\main.c(231): warning:  #177-D: variable "os_err" was declared but never referenced
+..\User\main.c(444): warning:  #550-D: variable "status_2" was set but never used
+..\User\main.c(444): warning:  #550-D: variable "status_3" was set but never used
+..\User\main.c(784): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+..\User\main.c(1261): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1264): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1282): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1500): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1501): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1513): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1648): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1649): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1661): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1806): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1807): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1820): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1083): warning:  #550-D: variable "status" was set but never used
+..\User\main.c(1100): warning:  #177-D: variable "phase" was declared but never referenced
+..\User\main.c(1101): warning:  #177-D: variable "gl" was declared but never referenced
+..\User\main.c(1102): warning:  #550-D: variable "wugongkvar_95" was set but never used
+..\User\main.c(1116): warning:  #550-D: variable "ON_HOLD_para" was set but never used
+..\User\main.c(1118): warning:  #550-D: variable "DELAY_ON_para" was set but never used
+..\User\main.c(1119): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
+compiling ch452.c...
+..\lcd\src\ch452.c(69): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=56036 RO-data=27044 RW-data=308 ZI-data=21852  
+FromELF: creating hex file...
+".\Out\Project.axf" - 0 Error(s), 28 Warning(s).
+Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
+* JLink Info: Device "STM32F407VE" selected.
+Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.96 , compiled Dec 22 2014 09:51:48
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20160403 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling ch452.c...
+..\lcd\src\ch452.c(69): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=56012 RO-data=27044 RW-data=308 ZI-data=21852  
+FromELF: creating hex file...
+".\Out\Project.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
+* JLink Info: Device "STM32F407VE" selected.
+Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.96 , compiled Dec 22 2014 09:51:48
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20160403 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+..\User\main.c(65): warning:  #1295-D: Deprecated declaration App_TaskLCD - give arg types
+..\User\main.c(66): warning:  #1295-D: Deprecated declaration sort_list - give arg types
+..\User\main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
+..\User\main.c(187): warning:  #1295-D: Deprecated declaration init_cap - give arg types
+..\User\main.c(231): warning:  #177-D: variable "os_err" was declared but never referenced
+..\User\main.c(444): warning:  #550-D: variable "status_2" was set but never used
+..\User\main.c(444): warning:  #550-D: variable "status_3" was set but never used
+..\User\main.c(784): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+..\User\main.c(1261): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1264): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1282): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1500): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1501): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1513): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1648): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1649): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1661): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1806): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1807): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1820): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1083): warning:  #550-D: variable "status" was set but never used
+..\User\main.c(1100): warning:  #177-D: variable "phase" was declared but never referenced
+..\User\main.c(1101): warning:  #177-D: variable "gl" was declared but never referenced
+..\User\main.c(1102): warning:  #550-D: variable "wugongkvar_95" was set but never used
+..\User\main.c(1116): warning:  #550-D: variable "ON_HOLD_para" was set but never used
+..\User\main.c(1118): warning:  #550-D: variable "DELAY_ON_para" was set but never used
+..\User\main.c(1119): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
+linking...
+Program Size: Code=56020 RO-data=27044 RW-data=308 ZI-data=21852  
+FromELF: creating hex file...
+".\Out\Project.axf" - 0 Error(s), 27 Warning(s).
+Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
+* JLink Info: Device "STM32F407VE" selected.
+Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.96 , compiled Dec 22 2014 09:51:48
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20160403 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+..\User\main.c(65): warning:  #1295-D: Deprecated declaration App_TaskLCD - give arg types
+..\User\main.c(66): warning:  #1295-D: Deprecated declaration sort_list - give arg types
+..\User\main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
+..\User\main.c(187): warning:  #1295-D: Deprecated declaration init_cap - give arg types
+..\User\main.c(231): warning:  #177-D: variable "os_err" was declared but never referenced
+..\User\main.c(444): warning:  #550-D: variable "status_2" was set but never used
+..\User\main.c(444): warning:  #550-D: variable "status_3" was set but never used
+..\User\main.c(785): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+..\User\main.c(1262): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1265): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1283): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1501): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1502): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1514): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1649): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1650): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1662): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1807): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1808): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1821): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1084): warning:  #550-D: variable "status" was set but never used
+..\User\main.c(1101): warning:  #177-D: variable "phase" was declared but never referenced
+..\User\main.c(1102): warning:  #177-D: variable "gl" was declared but never referenced
+..\User\main.c(1103): warning:  #550-D: variable "wugongkvar_95" was set but never used
+..\User\main.c(1117): warning:  #550-D: variable "ON_HOLD_para" was set but never used
+..\User\main.c(1119): warning:  #550-D: variable "DELAY_ON_para" was set but never used
+..\User\main.c(1120): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
+linking...
+Program Size: Code=56036 RO-data=27044 RW-data=308 ZI-data=21852  
+FromELF: creating hex file...
+".\Out\Project.axf" - 0 Error(s), 27 Warning(s).
+Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
+* JLink Info: Device "STM32F407VE" selected.
+Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.96 , compiled Dec 22 2014 09:51:48
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20160403 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+..\User\main.c(65): warning:  #1295-D: Deprecated declaration App_TaskLCD - give arg types
+..\User\main.c(66): warning:  #1295-D: Deprecated declaration sort_list - give arg types
+..\User\main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
+..\User\main.c(187): warning:  #1295-D: Deprecated declaration init_cap - give arg types
+..\User\main.c(231): warning:  #177-D: variable "os_err" was declared but never referenced
+..\User\main.c(444): warning:  #550-D: variable "status_2" was set but never used
+..\User\main.c(444): warning:  #550-D: variable "status_3" was set but never used
+..\User\main.c(785): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+..\User\main.c(1262): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1265): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1283): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1501): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1502): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1514): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1649): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1650): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1662): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1807): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1808): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1821): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1084): warning:  #550-D: variable "status" was set but never used
+..\User\main.c(1101): warning:  #177-D: variable "phase" was declared but never referenced
+..\User\main.c(1102): warning:  #177-D: variable "gl" was declared but never referenced
+..\User\main.c(1103): warning:  #550-D: variable "wugongkvar_95" was set but never used
+..\User\main.c(1117): warning:  #550-D: variable "ON_HOLD_para" was set but never used
+..\User\main.c(1119): warning:  #550-D: variable "DELAY_ON_para" was set but never used
+..\User\main.c(1120): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
+linking...
+Program Size: Code=56044 RO-data=27044 RW-data=308 ZI-data=21852  
+FromELF: creating hex file...
+".\Out\Project.axf" - 0 Error(s), 27 Warning(s).
+Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
+* JLink Info: Device "STM32F407VE" selected.
+Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.96 , compiled Dec 22 2014 09:51:48
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20160403 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+..\User\main.c(65): warning:  #1295-D: Deprecated declaration App_TaskLCD - give arg types
+..\User\main.c(66): warning:  #1295-D: Deprecated declaration sort_list - give arg types
+..\User\main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
+..\User\main.c(187): warning:  #1295-D: Deprecated declaration init_cap - give arg types
+..\User\main.c(231): warning:  #177-D: variable "os_err" was declared but never referenced
+..\User\main.c(444): warning:  #550-D: variable "status_1" was set but never used
+..\User\main.c(444): warning:  #550-D: variable "status_2" was set but never used
+..\User\main.c(444): warning:  #550-D: variable "status_3" was set but never used
+..\User\main.c(785): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+..\User\main.c(1262): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1265): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1283): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1501): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1502): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1514): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1649): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1650): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1662): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1807): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1808): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1821): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1084): warning:  #550-D: variable "status" was set but never used
+..\User\main.c(1101): warning:  #177-D: variable "phase" was declared but never referenced
+..\User\main.c(1102): warning:  #177-D: variable "gl" was declared but never referenced
+..\User\main.c(1103): warning:  #550-D: variable "wugongkvar_95" was set but never used
+..\User\main.c(1117): warning:  #550-D: variable "ON_HOLD_para" was set but never used
+..\User\main.c(1119): warning:  #550-D: variable "DELAY_ON_para" was set but never used
+..\User\main.c(1120): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
+linking...
+Program Size: Code=56036 RO-data=27044 RW-data=308 ZI-data=21852  
+FromELF: creating hex file...
+".\Out\Project.axf" - 0 Error(s), 28 Warning(s).
+Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
+* JLink Info: Device "STM32F407VE" selected.
+Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.96 , compiled Dec 22 2014 09:51:48
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20160403 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
+* JLink Info: Device "STM32F407VE" selected.
+Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.96 , compiled Dec 22 2014 09:51:48
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20160403 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+..\User\main.c(65): warning:  #1295-D: Deprecated declaration App_TaskLCD - give arg types
+..\User\main.c(66): warning:  #1295-D: Deprecated declaration sort_list - give arg types
+..\User\main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
+..\User\main.c(187): warning:  #1295-D: Deprecated declaration init_cap - give arg types
+..\User\main.c(231): warning:  #177-D: variable "os_err" was declared but never referenced
+..\User\main.c(444): warning:  #177-D: variable "status_1" was declared but never referenced
+..\User\main.c(444): warning:  #177-D: variable "status_2" was declared but never referenced
+..\User\main.c(444): warning:  #177-D: variable "status_3" was declared but never referenced
+..\User\main.c(444): warning:  #177-D: variable "status_4" was declared but never referenced
+..\User\main.c(761): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+..\User\main.c(1238): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1241): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1259): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1477): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1478): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1490): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1625): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1626): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1638): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1783): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1784): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1797): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1060): warning:  #550-D: variable "status" was set but never used
+..\User\main.c(1077): warning:  #177-D: variable "phase" was declared but never referenced
+..\User\main.c(1078): warning:  #177-D: variable "gl" was declared but never referenced
+..\User\main.c(1079): warning:  #550-D: variable "wugongkvar_95" was set but never used
+..\User\main.c(1093): warning:  #550-D: variable "ON_HOLD_para" was set but never used
+..\User\main.c(1095): warning:  #550-D: variable "DELAY_ON_para" was set but never used
+..\User\main.c(1096): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
+linking...
+Program Size: Code=55884 RO-data=27044 RW-data=308 ZI-data=21852  
+FromELF: creating hex file...
+".\Out\Project.axf" - 0 Error(s), 29 Warning(s).
+Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
+* JLink Info: Device "STM32F407VE" selected.
+Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.96 , compiled Dec 22 2014 09:51:48
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20160403 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+..\User\main.c(65): warning:  #1295-D: Deprecated declaration App_TaskLCD - give arg types
+..\User\main.c(66): warning:  #1295-D: Deprecated declaration sort_list - give arg types
+..\User\main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
+..\User\main.c(187): warning:  #1295-D: Deprecated declaration init_cap - give arg types
+..\User\main.c(231): warning:  #177-D: variable "os_err" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_1" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_2" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_3" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_4" was declared but never referenced
+..\User\main.c(756): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+..\User\main.c(1233): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1236): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1254): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1472): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1473): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1485): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1620): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1621): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1633): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1778): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1779): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1792): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1055): warning:  #550-D: variable "status" was set but never used
+..\User\main.c(1072): warning:  #177-D: variable "phase" was declared but never referenced
+..\User\main.c(1073): warning:  #177-D: variable "gl" was declared but never referenced
+..\User\main.c(1074): warning:  #550-D: variable "wugongkvar_95" was set but never used
+..\User\main.c(1088): warning:  #550-D: variable "ON_HOLD_para" was set but never used
+..\User\main.c(1090): warning:  #550-D: variable "DELAY_ON_para" was set but never used
+..\User\main.c(1091): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
+linking...
+Program Size: Code=55564 RO-data=27044 RW-data=308 ZI-data=21852  
+FromELF: creating hex file...
+".\Out\Project.axf" - 0 Error(s), 29 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+..\User\main.c(65): warning:  #1295-D: Deprecated declaration App_TaskLCD - give arg types
+..\User\main.c(66): warning:  #1295-D: Deprecated declaration sort_list - give arg types
+..\User\main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
+..\User\main.c(187): warning:  #1295-D: Deprecated declaration init_cap - give arg types
+..\User\main.c(231): warning:  #177-D: variable "os_err" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_1" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_2" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_3" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_4" was declared but never referenced
+..\User\main.c(758): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+..\User\main.c(1235): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1238): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1256): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1474): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1475): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1487): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1622): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1623): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1635): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1780): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1781): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1794): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1057): warning:  #550-D: variable "status" was set but never used
+..\User\main.c(1074): warning:  #177-D: variable "phase" was declared but never referenced
+..\User\main.c(1075): warning:  #177-D: variable "gl" was declared but never referenced
+..\User\main.c(1076): warning:  #550-D: variable "wugongkvar_95" was set but never used
+..\User\main.c(1090): warning:  #550-D: variable "ON_HOLD_para" was set but never used
+..\User\main.c(1092): warning:  #550-D: variable "DELAY_ON_para" was set but never used
+..\User\main.c(1093): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
+linking...
+Program Size: Code=55588 RO-data=27044 RW-data=308 ZI-data=21852  
+FromELF: creating hex file...
+".\Out\Project.axf" - 0 Error(s), 29 Warning(s).
+Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
+* JLink Info: Device "STM32F407VE" selected.
+Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.96 , compiled Dec 22 2014 09:51:48
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20160403 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+..\User\main.c(65): warning:  #1295-D: Deprecated declaration App_TaskLCD - give arg types
+..\User\main.c(66): warning:  #1295-D: Deprecated declaration sort_list - give arg types
+..\User\main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
+..\User\main.c(187): warning:  #1295-D: Deprecated declaration init_cap - give arg types
+..\User\main.c(231): warning:  #177-D: variable "os_err" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_1" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_2" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_3" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_4" was declared but never referenced
+..\User\main.c(758): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+..\User\main.c(1235): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1238): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1256): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1474): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1475): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1487): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1622): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1623): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1635): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1780): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1781): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1794): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1057): warning:  #550-D: variable "status" was set but never used
+..\User\main.c(1074): warning:  #177-D: variable "phase" was declared but never referenced
+..\User\main.c(1075): warning:  #177-D: variable "gl" was declared but never referenced
+..\User\main.c(1076): warning:  #550-D: variable "wugongkvar_95" was set but never used
+..\User\main.c(1090): warning:  #550-D: variable "ON_HOLD_para" was set but never used
+..\User\main.c(1092): warning:  #550-D: variable "DELAY_ON_para" was set but never used
+..\User\main.c(1093): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
+linking...
+Program Size: Code=55636 RO-data=27044 RW-data=308 ZI-data=21852  
+FromELF: creating hex file...
+".\Out\Project.axf" - 0 Error(s), 29 Warning(s).
+Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
+* JLink Info: Device "STM32F407VE" selected.
+Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.96 , compiled Dec 22 2014 09:51:48
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N : 20160403 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VE
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+..\User\main.c(65): warning:  #1295-D: Deprecated declaration App_TaskLCD - give arg types
+..\User\main.c(66): warning:  #1295-D: Deprecated declaration sort_list - give arg types
+..\User\main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
+..\User\main.c(187): warning:  #1295-D: Deprecated declaration init_cap - give arg types
+..\User\main.c(231): warning:  #177-D: variable "os_err" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_1" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_2" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_3" was declared but never referenced
+..\User\main.c(439): warning:  #177-D: variable "status_4" was declared but never referenced
+..\User\main.c(758): warning:  #177-D: variable "DMA_InitStructure" was declared but never referenced
+..\User\main.c(1235): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1238): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1256): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1474): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1475): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1487): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1622): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1623): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1635): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1780): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1781): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\User\main.c(1794): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\User\main.c(1057): warning:  #550-D: variable "status" was set but never used
+..\User\main.c(1074): warning:  #177-D: variable "phase" was declared but never referenced
+..\User\main.c(1075): warning:  #177-D: variable "gl" was declared but never referenced
+..\User\main.c(1076): warning:  #550-D: variable "wugongkvar_95" was set but never used
+..\User\main.c(1090): warning:  #550-D: variable "ON_HOLD_para" was set but never used
+..\User\main.c(1092): warning:  #550-D: variable "DELAY_ON_para" was set but never used
+..\User\main.c(1093): warning:  #550-D: variable "DELAY_OFF_para" was set but never used
+linking...
+Program Size: Code=55676 RO-data=27044 RW-data=308 ZI-data=21852  
+FromELF: creating hex file...
+".\Out\Project.axf" - 0 Error(s), 29 Warning(s).
 Load "C:\\Users\\Administrator\\Documents\\GitHub\\smartdust_FastControl\\MDK_Project\\Out\\Project.AXF" 
 * JLink Info: Device "STM32F407VE" selected.
 Set JLink Project File to "C:\Users\Administrator\Documents\GitHub\smartdust_FastControl\MDK_Project\JLinkSettings.ini"

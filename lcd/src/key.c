@@ -170,8 +170,8 @@ else
 	  case 1:								//CT互感器参数设置
 	  {
 		 Clera_lcd();
-		 if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-		 if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+3,3);
+		 if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);} //Write_1621(0,0x08) 电容预置
+		 if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+3,3);Write_1621(0,0x08);}
    			//CT_para从eeprom读出
 a=AT24CXX_ReadOneByte(0x0000);
 
@@ -207,8 +207,8 @@ a=AT24CXX_ReadOneByte(0x0000);
 	  case 2:				//投入延时参数设置
 	  {
 	  	 Clera_lcd();
-		 if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-		 if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+2*3,3);
+		 if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);}
+		 if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+2*3,3);Write_1621(0,0x08);}
 
 		 Write_1621(24,0x04);	//投入
 
@@ -245,8 +245,8 @@ a=AT24CXX_ReadOneByte(0x0000);
 	  case 3:		  //切除延时参数设置
 	  {
 	  	 Clera_lcd();
-	   	 if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-		 if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+2*3,3);
+	   	 if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);}
+		 if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+2*3,3);Write_1621(0,0x08);}
 
 		  Write_1621(24,0x02);	//切除
 		 DELAY_OFF_para=AT24CXX_ReadOneByte(0x0002);  //存储DELAY_OFF_para到eeprom
@@ -284,8 +284,8 @@ a=AT24CXX_ReadOneByte(0x0000);
 	  {
 	  	 Clera_lcd();
 
-		 if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-		 if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+3*3,3);
+		 if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);}
+		 if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+3*3,3);Write_1621(0,0x08);}
 
 				 Write_1621(24,0x04);	//投入
 
@@ -321,8 +321,8 @@ a=AT24CXX_ReadOneByte(0x0000);
 	  case 5:		//切除COS参数设置
 	  {
 	  	 Clera_lcd();
-		 if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-		 if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+3*3,3);
+		 if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);}
+		 if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+3*3,3);Write_1621(0,0x08);}
 		 
 		 Write_1621(24,0x02);	//切除
 
@@ -361,8 +361,8 @@ a=AT24CXX_ReadOneByte(0x0000);
    if(KEY_3==1) 
 	  {
 	  	Clera_lcd();
-		if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-		if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+4*3,3);
+		if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);}
+		if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+4*3,3);Write_1621(0,0x08);}
 
 		//CT_para从eeprom读出
 
@@ -401,8 +401,8 @@ a=AT24CXX_ReadOneByte(0x0000);
 	   if(KEY_3==0) 
 	  {
 	  	Clera_lcd();
-		if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-		if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+4*3,3);
+		if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);}
+		if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+4*3,3);Write_1621(0,0x08);}
 
 		//CT_para从eeprom读出
 
@@ -440,8 +440,8 @@ a=AT24CXX_ReadOneByte(0x0000);
 	  case 7:	   //投入门限参数设置
 	  {
 	  	Clera_lcd();
-		if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-		if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+5*3,3);
+		if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);}
+		if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+5*3,3);Write_1621(0,0x08);}
 
 		ON_HOLD_para=AT24CXX_ReadOneByte(0x0005); 
  
@@ -478,8 +478,8 @@ a=AT24CXX_ReadOneByte(0x0000);
 	  case 8:	  //切除门限参数设置
 	  {
 	  	Clera_lcd();
-		if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-		if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+6*3,3);
+		if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);}
+		if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+6*3,3);Write_1621(0,0x08);}
 
 	
 
@@ -516,8 +516,8 @@ a=AT24CXX_ReadOneByte(0x0000);
 	  case 9:	 //谐波电压参数设置
 	  {
 	  	Clera_lcd();
-		if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-		if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+8*3,3);
+		if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);}
+		if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+8*3,3);Write_1621(0,0x08);}
 
 		WriteAll_1621(20,numHU_prot,4);
 	//	WriteAll_1621(22,numHU_prot+2,2);
@@ -556,8 +556,8 @@ a=AT24CXX_ReadOneByte(0x0000);
 	  case 10:		 //谐波电流参数设置
 	  {
 	   Clera_lcd();
-	   if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-	   if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+8*3,3);
+	   if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);}
+	   if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+8*3,3);Write_1621(0,0x08);}
 
 	   WriteAll_1621(20,numHI_prot,4);
 	//   WriteAll_1621(22,numHI_prot+2,2);
@@ -594,8 +594,8 @@ a=AT24CXX_ReadOneByte(0x0000);
 	  case 11:	  //通信地址参数设置
 	  {
 	  	Clera_lcd();
-		if(Work_Flag==1)WriteAll_1621(28,num_SET_Seg,3);
-		if(Work_Flag==0)WriteAll_1621(28,num_SET_Seg+9*3,3);
+		if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);}
+		if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg+9*3,3);Write_1621(0,0x08);}
 		
 			
 		 		 com_ID=AT24CXX_ReadOneByte(0x000b);  //存储DELAY_OFF_para到eeprom
@@ -629,7 +629,8 @@ a=AT24CXX_ReadOneByte(0x0000);
 	  }
 	  case 12:
 	  	Clera_lcd();
-
+ if(Work_Flag==1){WriteAll_1621(28,num_SET_Seg,3);Write_1621(0,0x08);} //Write_1621(0,0x08) 电容预置
+		 if(Work_Flag==0){WriteAll_1621(28,num_SET_Seg,3);}
 	  	{
 
 {
@@ -725,7 +726,7 @@ delay_ms(150);
 
 }
 
-	  	Clera_lcd();
+	  //	Clera_lcd();
 
 
 

@@ -21,7 +21,7 @@
 #define  k 0.8	//0.8
 #define PI2  6.28318530717959
 #define cruccent_ratio  1.07/2.955                //电流校正系数
-#define zero_limit 1200         //1000为电流门限0.1           1500为电流门限0.15
+#define zero_limit 1500         //1000为电流门限0.1           1500为电流门限0.15
 #define dianyan_ratio 1.04
 
 
@@ -262,25 +262,24 @@ while(1)
 
 
 
+
   if(KEY_3==0) 
 
 {
 for(i=1;i<=32;i++)
 {
 
-/*更新指示灯*/
+//更新指示灯
 if(comm_list[i].size==0)
 {
-Light_pad_off(1,i,0,0,0);//指示灯使用
-	  	 set_bit(i, 1, &light_status, 0,0, 0,2);//手动投切使用
+Light_pad_on_smartdust( i,0);//指示灯使用
 		set_clear_existence(0,i,&hand_light_existence);
-
+comm_list[i].work_status=0;
 
 }
 else
 {
-	 Light_pad_on(1,i,comm_list[i].work_status,comm_list[i].work_status,0);
-	 set_bit(i, 1, &light_status, comm_list[i].work_status,comm_list[i].work_status,0,0);//手动投切使用
+Light_pad_on_smartdust( i,comm_list[i].work_status);
 	 set_clear_existence(1,i,&hand_light_existence);
 
 }
@@ -295,19 +294,18 @@ else
 for(i=1;i<=26;i++)
 {
 
-/*更新指示灯*/
+//更新指示灯
 if(comm_list[i].size==0)
 {
-Light_pad_off(1,i,0,0,0);//指示灯使用
-	  	 set_bit(i, 1, &light_status, 0,0, 0,2);//手动投切使用
+Light_pad_on_smartdust( i,0);//指示灯使用
 		set_clear_existence(0,i,&hand_light_existence);
+comm_list[i].work_status=0;
 
 
 }
 else
 {
-	 Light_pad_on(1,i,comm_list[i].work_status,comm_list[i].work_status,0);
-	 set_bit(i, 1, &light_status, comm_list[i].work_status,comm_list[i].work_status,0,0);//手动投切使用
+Light_pad_on_smartdust( i,comm_list[i].work_status);
 	 set_clear_existence(1,i,&hand_light_existence);
 
 }
@@ -317,19 +315,17 @@ else
 for(i=27;i<=32;i++)
 {
 
-/*更新指示灯*/
+//更新指示灯
 if(comm_list[i].size==0)
 {
-Light_pad_off(1,i,0,0,0);//指示灯使用
-	  	 set_bit(i, 1, &light_status, 0,0, 0,2);//手动投切使用
+Light_pad_on_smartdust( i,0);//指示灯使用
 		set_clear_existence(0,i,&hand_light_existence);
-
+comm_list[i].work_status=0;
 
 }
 else
 {
-	 Light_pad_on(1,i,comm_list[i].work_status,comm_list[i].work_status,0);
-	 set_bit(i, 1, &light_status, comm_list[i].work_status,comm_list[i].work_status,0,0);//手动投切使用
+	 Light_pad_on_smartdust( i,comm_list[i].work_status);
 	 set_clear_existence(1,i,&hand_light_existence);
 
 }
@@ -341,12 +337,12 @@ else
 
 
 
+
+
 if(COMMCAT_para==0) //自动模式
 {
-//sort_list();
 
  computer_gonglu(testInput_V,testInput_C,testOutput,reslut);
-//delay_ms(1000);
 
 }
 
@@ -453,23 +449,12 @@ u8 i;
  		{
         exist=clear_bit(hand_id, hand_light_existence);
 		if(exist==1){
-           status_4=clear_bit(hand_id,light_status.work_status[3]);
- //	dis_com= clear_bit(hand_id,light_status.dis_comm);
-
-	if(status_4==0)   
-	{
-	status_1= clear_bit(hand_id,light_status.work_status[0]);
-	status_2= clear_bit(hand_id,light_status.work_status[1]);
-	status_3= clear_bit(hand_id,light_status.work_status[2]);
- Light_pad_on(dis_com,hand_id,status_1,status_2,status_3);
-			}
-	if(status_4==1)Light_pad_on(dis_com,hand_id,2,2,2);
-
-			
-
+	Light_pad_on_smartdust( hand_id,comm_list[hand_id].work_status);
+		
 		}
+		else{	Light_pad_on_smartdust( hand_id,0);}
 		 hand_id++;
-		 while(KEY_right==0);
+		 while(KEY_right==0)Light_pad_on_smartdust( hand_id,comm_list[hand_id].work_status);
 		 if(hand_id>32)hand_id=1;
 		 	for(i=hand_id;i<=32;i++)
 		{exist=clear_bit(i, hand_light_existence);
@@ -486,24 +471,14 @@ u8 i;
 	if(KEY_left==0)
 	  {
 	          exist=clear_bit(hand_id, hand_light_existence);
-		if(exist==1){
-           status_4=clear_bit(hand_id,light_status.work_status[3]);
- //	dis_com= clear_bit(hand_id,light_status.dis_comm);
-
-	if(status_4==0)   
-	{
-	status_1= clear_bit(hand_id,light_status.work_status[0]);
-	status_2= clear_bit(hand_id,light_status.work_status[1]);
-	status_3= clear_bit(hand_id,light_status.work_status[2]);
- Light_pad_on(dis_com,hand_id,status_1,status_2,status_3);
-			}
-	if(status_4==1)Light_pad_on(dis_com,hand_id,2,2,2);
-
-			
+		if(exist==1)
+			{
+	Light_pad_on_smartdust( hand_id,comm_list[hand_id].work_status);
 
 		}
+				else{	Light_pad_on_smartdust( hand_id,0);}
 		 hand_id--;
-		 while(KEY_left==0);
+		 while(KEY_left==0)	Light_pad_on_smartdust( hand_id,comm_list[hand_id].work_status);
 		 if(hand_id<1)hand_id=32;
 		 		 	for(i=hand_id;i>=1;i--)
 		{exist=clear_bit(i, hand_light_existence);
@@ -520,19 +495,16 @@ u8 i;
 
 	   //if(exist==1)
 	   	{
-           status_4=clear_bit(hand_id,light_status.work_status[3]);
-	//	   dis_com= clear_bit(hand_id,light_status.dis_comm);
-	//	if(status_4==0)   
+ 
 			{
-	status_1= clear_bit(hand_id,light_status.work_status[0]);
-	status_2= clear_bit(hand_id,light_status.work_status[1]);
-	status_3= clear_bit(hand_id,light_status.work_status[2]);
+	
 //if(Work_Flag==1)
-	Light_pad_on(dis_com,hand_id,status_1,status_2,status_3);
+Light_pad_on_smartdust( hand_id,1);
 delay_ms(50);
 //if(Work_Flag==0)
-	Light_pad_off(dis_com,hand_id,status_1,status_2,status_3);
+Light_pad_on_smartdust( hand_id,0);
 delay_ms(50);
+Light_pad_on_smartdust( hand_id,comm_list[hand_id].work_status);
 
 				}
 				
@@ -635,7 +607,7 @@ for(i=1;i<=32;i++)
 comm_list[i].size= AT24CXX_ReadOneByte(0x0010+(i-1)*2);
 comm_list[i].work_status=0;
 comm_list[i].id=i;
- Light_pad_on(dis_com,i,0,0,0);
+Light_pad_on_smartdust( i,0);
 }
 }
 
@@ -1170,9 +1142,9 @@ ADC1_CH4_DMA_Config_CB();
 	 	{
 	 	
 	 	
-testInput_C[i]=(float32_t)((ADC_Converted_CValue-ADC_Converted_base)*3.3/4096);///  1550
+testInput_C[i]=(float32_t)((ADC_Converted_CValue-ADC_Converted_base)*2.63/4096);///  1550
 
-testInput_V[i]=(float32_t)((ADC_Converted_VValue-ADC_Converted_base)*3.3/4096);///  1550
+testInput_V[i]=(float32_t)((ADC_Converted_VValue-ADC_Converted_base)*2.68/4096);///  1550
 
 delay_us(34);//36->512  //34 //46 //
 
@@ -1263,7 +1235,8 @@ else if(((angle[2]<180.0)&&(angle[2]>90.0))||(angle[2]>-270&&angle[2]<-180)){L_C
 dianliuzhi=T*maxValue_C*cruccent_ratio/16.8;
 arm_sqrt_f32(1-(arm_cos_f32(angle[0]-angle[1]))*(arm_cos_f32(angle[0]-angle[1])),&sine);
 gonglvshishu=sine*100;
-if(dianliuzhi<zero_limit*T){gonglvshishu=100;dianliuzhi=0;L_C_flag_B=1;}//电流小于0.1A 时，电流就清零
+if(gonglvshishu<10&&gonglvshishu>=0){L_C_flag_B=0;}
+if(dianliuzhi<zero_limit*T||dianya_zhi<100){gonglvshishu=100;dianliuzhi=0;L_C_flag_B=1;}//电流小于0.1A 时，电流就清零
 else dianliuzhi=dianliuzhi/1000;
 arm_sqrt_f32(1-sine*sine,&cose);
 
@@ -1309,7 +1282,7 @@ L_C_flag_C=L_C_flag_B;
    if(KEY_3==1) 
 
 {
-/*********************判断相序*******************************/
+/*********************判断相序******************************
 {
 
 ADC3_CH10_DMA_Config_VA();
@@ -1320,11 +1293,11 @@ ADC1_CH1_DMA_Config_VC_phase();
 	 	{
 	 	
 	 	
-testInput_C[i]=(float32_t)((ADC_Converted_CValue-ADC_Converted_base)*3.3/4096);///  1550
+testInput_C[i]=(float32_t)((ADC_Converted_CValue-ADC_Converted_base)*2.63/4096);///  1550
 
-testInput_V[i]=(float32_t)((ADC_Converted_VValue-ADC_Converted_base)*3.3/4096);///  1550
+testInput_V[i]=(float32_t)((ADC_Converted_VValue-ADC_Converted_base)*2.68/4096);///  1550
 
-delay_us(36);//36->512
+delay_us(34);//36->512
 
         }
 
@@ -1335,13 +1308,13 @@ allphase(testInput_V,testInput_C);
 	status = arm_rfft_init_f32(&S,&S_CFFT, fftSize,  
 	  								ifftFlag, doBitReverse); 
 	 
-	/* Process the data through the CFFT/CIFFT module */ 
+
 	arm_rfft_f32(&S, testInput_V,testOutput); 
 
              testIndex=1;
 		angle[0]=atan2(testOutput[2*testIndex],testOutput[2*testIndex+1]);//A相初始相位
 
-/******************************************************************/
+///////////////////////////////////////////////////////////////////////////////////
 	arm_rfft_f32(&S, testInput_C,testOutput); 
          
 	angle[1]=atan2(testOutput[2*testIndex],testOutput[2*testIndex+1]);//C相初始相位
@@ -1363,10 +1336,13 @@ else phase_flag=1;
 
      }
 }
-/************************判断相序end**************************/
+***********************判断相序end**************************/
 
 /*********************A_phase*********************************/
-//for(s=1;s<=9;s++)
+
+ phase_flag=0;// 不需要判断相序
+
+
 {
 	if(phase_flag==0)
 		{
@@ -1385,11 +1361,11 @@ ADC1_CH7_DMA_Config_CC();
 	 	{
 	 	
 	 	
-testInput_C[i]=(float32_t)((ADC_Converted_CValue-ADC_Converted_base)*3.3/4096);///  1550
+testInput_C[i]=(float32_t)((ADC_Converted_CValue-ADC_Converted_base)*2.63/4096);///  1550
 
-testInput_V[i]=(float32_t)((ADC_Converted_VValue-ADC_Converted_base)*3.3/4096);///  1550
+testInput_V[i]=(float32_t)((ADC_Converted_VValue-ADC_Converted_base)*2.68/4096);///  1550
 
-delay_us(36);//36->512
+delay_us(34);//36->512
 
         }
 
@@ -1496,7 +1472,8 @@ angle[2]=((angle[2])*PI2)/360;
 
 /***************************************************************/
  dianliuzhi_A=T*maxValue_C*cruccent_ratio/16.8;
- if(dianliuzhi_A<=zero_limit*T){dianliuzhi_A=0;gonglvshishu_A=100;L_C_flag_A=1;}
+if(gonglvshishu_A<10&&gonglvshishu_A>=0){L_C_flag_A=0;}
+ if(dianliuzhi_A<=zero_limit*T||dianya_zhi_A<=100){dianliuzhi_A=0;gonglvshishu_A=100;L_C_flag_A=1;}
 else{ 
 	dianliuzhi_A=dianliuzhi_A/1000;
 	gonglvshishu_A=arm_cos_f32(angle[2])*100;//功率因素
@@ -1533,11 +1510,11 @@ ADC1_CH4_DMA_Config_CB();
 	 	{
 	 	
 	 	
-testInput_C[i]=(float32_t)((ADC_Converted_CValue-ADC_Converted_base)*3.3/4096);///  1550
+testInput_C[i]=(float32_t)((ADC_Converted_CValue-ADC_Converted_base)*2.63/4096);///  1550
 
-testInput_V[i]=(float32_t)((ADC_Converted_VValue-ADC_Converted_base)*3.3/4096);///  1550
+testInput_V[i]=(float32_t)((ADC_Converted_VValue-ADC_Converted_base)*2.68/4096);///  1550
 
-delay_us(36);//36->512
+delay_us(34);//36->512
 
         }
 
@@ -1643,7 +1620,8 @@ angle[2]=((angle[2])*PI2)/360;
 
 /***************************************************************/
 dianliuzhi_B=T*maxValue_C*cruccent_ratio/16.8;
- if(dianliuzhi_B<=zero_limit*T){dianliuzhi_B=0;gonglvshishu_B=100;L_C_flag_B=1;}
+if(gonglvshishu_B<10&&gonglvshishu_B>=0){L_C_flag_B=0;}
+ if(dianliuzhi_B<=zero_limit*T||dianya_zhi_B<=100){dianliuzhi_B=0;gonglvshishu_B=100;L_C_flag_B=1;}
 else {
         dianliuzhi_B=dianliuzhi_B/1000;
 	gonglvshishu_B=arm_cos_f32(angle[2])*100;//功率因素
@@ -1691,11 +1669,11 @@ ADC1_CH7_DMA_Config_CC();
 	 	{
 	 	
 	 	
-testInput_C[i]=(float32_t)((ADC_Converted_CValue-ADC_Converted_base)*3.3/4096);///  1550
+testInput_C[i]=(float32_t)((ADC_Converted_CValue-ADC_Converted_base)*2.63/4096);///  1550
 
-testInput_V[i]=(float32_t)((ADC_Converted_VValue-ADC_Converted_base)*3.3/4096);///  1550
+testInput_V[i]=(float32_t)((ADC_Converted_VValue-ADC_Converted_base)*2.68/4096);///  1550
 
-delay_us(36);//36->512
+delay_us(34);//36->512
 
         }
 
@@ -1751,7 +1729,7 @@ C_HV=(HU_C/maxValue)*100;
 	/* Calculates maxValue and returns corresponding BIN value */ 
 	arm_max_f32(reslut, fftSize/2, &maxValue_C, &testIndex);
 /****************************************************************/
-				angle[2]=((angle[1]-angle[0])*360)/PI2;
+					angle[2]=((angle[1]-angle[0])*360)/PI2;
 
 				  if(angle[2]>0){while(1){if(angle[2]>360){angle[2]=angle[2]-360;} else break;}}
 				else if(angle[2]<0){while(1){if(angle[2]<-360){angle[2]=angle[2]+360;} else break;}}
@@ -1798,10 +1776,10 @@ C_HV=(HU_C/maxValue)*100;
         
 angle[2]=((angle[2])*PI2)/360;
 
-
 /***************************************************************/
 dianliuzhi_C=T*maxValue_C*cruccent_ratio/16.8;
- if(dianliuzhi_C<=zero_limit*T){dianliuzhi_C=0;gonglvshishu_C=100;L_C_flag_C=1;}
+if(gonglvshishu_C<10&&gonglvshishu_C>=0){L_C_flag_C=0;}
+ if(dianliuzhi_C<=zero_limit*T||dianya_zhi_C<=100){dianliuzhi_C=0;gonglvshishu_C=100;L_C_flag_C=1;}
 else
 	{
 	dianliuzhi_C=dianliuzhi_C/1000;
@@ -1886,7 +1864,8 @@ display_nothing_close_open_warn=1;//设置显示投入
 {
 	
 set_74hc273(comm_list[i].id, ON);
- Light_pad_on(dis_com,comm_list[i].id,1,1,0);
+Light_pad_on_smartdust( comm_list[i].id,1);
+// Light_pad_on(dis_com,comm_list[i].id,1,1,0);
 comm_list[i].work_status=1;
 first=i+1;
 //if(DELAY_ON_para>0)delay_ms(DELAY_ON_para*10);
@@ -1918,7 +1897,8 @@ if(comm_list[i].work_status==1&&comm_list[i].size>0)
 display_nothing_close_open_warn=2;//设置显示切除
 {
 set_74hc273(comm_list[i].id, OFF);
- Light_pad_on(dis_com,comm_list[i].id,0,0,0);
+Light_pad_on_smartdust( comm_list[i].id,0);
+// Light_pad_on(dis_com,comm_list[i].id,0,0,0);
 comm_list[i].work_status=0;
 end=i+1;
 //if(DELAY_OFF_para!=0)
@@ -1957,7 +1937,8 @@ if(comm_list[i].work_status==0&&(wugongkvar_A>=comm_list[i].size)&&comm_list[i].
 display_nothing_close_open_warn=1;//设置显示投入
 {
 set_74hc273(comm_list[i].id, ON);
- Light_pad_on(dis_com,comm_list[i].id,1,1,0);
+Light_pad_on_smartdust( comm_list[i].id,1);
+ //Light_pad_on(dis_com,comm_list[i].id,1,1,0);
 comm_list[i].work_status=1;
 //if(DELAY_ON_para!=0)
 //delay_ms(DELAY_ON_para*10);
@@ -1982,7 +1963,8 @@ if(comm_list[i].work_status==0&&(wugongkvar_B>=comm_list[i].size)&&comm_list[i].
 display_nothing_close_open_warn=1;//设置显示投入
 {
 set_74hc273(comm_list[i].id, ON);
- Light_pad_on(dis_com,comm_list[i].id,1,1,0);
+Light_pad_on_smartdust( comm_list[i].id,1);
+// Light_pad_on(dis_com,comm_list[i].id,1,1,0);
 comm_list[i].work_status=1;
 //if(DELAY_ON_para!=0)
 //delay_ms(DELAY_ON_para*10);
@@ -2008,7 +1990,8 @@ if(comm_list[i].work_status==0&&(wugongkvar_C>=comm_list[i].size)&&comm_list[i].
 display_nothing_close_open_warn=1;//设置显示投入
 {
 set_74hc273(comm_list[i].id, ON);
- Light_pad_on(dis_com,comm_list[i].id,1,1,0);
+Light_pad_on_smartdust( comm_list[i].id,1);
+// Light_pad_on(dis_com,comm_list[i].id,1,1,0);
 comm_list[i].work_status=1;
 //if(DELAY_ON_para!=0)
 //delay_ms(DELAY_ON_para*10);
@@ -2047,7 +2030,8 @@ if(comm_list[i].work_status==1&&comm_list[i].size>0)
 display_nothing_close_open_warn=2;//设置显示切除
 {
 set_74hc273(comm_list[i].id, OFF);
- Light_pad_on(dis_com,comm_list[i].id,0,0,0);
+Light_pad_on_smartdust( comm_list[i].id,0);
+// Light_pad_on(dis_com,comm_list[i].id,0,0,0);
 comm_list[i].work_status=0;
 //if(DELAY_OFF_para!=0)
 //delay_ms(DELAY_OFF_para*10);
@@ -2076,7 +2060,8 @@ if(comm_list[i].work_status==1&&comm_list[i].size>0)
 display_nothing_close_open_warn=2;//设置显示切除
 {
 set_74hc273(comm_list[i].id, OFF);
- Light_pad_on(dis_com,comm_list[i].id,0,0,0);
+Light_pad_on_smartdust( comm_list[i].id,0);
+// Light_pad_on(dis_com,comm_list[i].id,0,0,0);
 comm_list[i].work_status=0;
 //if(DELAY_OFF_para!=0)
 //delay_ms(DELAY_OFF_para*10);
@@ -2107,7 +2092,8 @@ if(comm_list[i].work_status==1&&comm_list[i].size>0)
 display_nothing_close_open_warn=2;//设置显示切除
 {
 set_74hc273(comm_list[i].id, OFF);
- Light_pad_on(dis_com,comm_list[i].id,0,0,0);
+Light_pad_on_smartdust( comm_list[i].id,0);
+ //Light_pad_on(dis_com,comm_list[i].id,0,0,0);
 comm_list[i].work_status=0;
 //if(DELAY_OFF_para!=0)
 //delay_ms(DELAY_OFF_para*10);
@@ -2231,7 +2217,8 @@ if(comm_list[i].work_status==1&&comm_list[i].size>0)
 display_nothing_close_open_warn=2;//设置显示切除
 {
 set_74hc273(comm_list[i].id, OFF);
- Light_pad_on(dis_com,comm_list[i].id,0,0,0);
+Light_pad_on_smartdust( comm_list[i].id,0);
+// Light_pad_on(dis_com,comm_list[i].id,0,0,0);
 comm_list[i].work_status=0;
 }
 		{
@@ -2256,7 +2243,8 @@ if(comm_list[i].work_status==1&&comm_list[i].size>0)
 display_nothing_close_open_warn=2;//设置显示切除
 {
 set_74hc273(comm_list[i].id, OFF);
- Light_pad_on(dis_com,comm_list[i].id,0,0,0);
+Light_pad_on_smartdust( comm_list[i].id,0);
+// Light_pad_on(dis_com,comm_list[i].id,0,0,0);
 comm_list[i].work_status=0;
 }
 		{
@@ -2281,7 +2269,8 @@ if(comm_list[i].work_status==1&&comm_list[i].size>0)
 display_nothing_close_open_warn=2;//设置显示切除
 {
 set_74hc273(comm_list[i].id, OFF);
- Light_pad_on(dis_com,comm_list[i].id,0,0,0);
+Light_pad_on_smartdust( comm_list[i].id,0);
+ //Light_pad_on(dis_com,comm_list[i].id,0,0,0);
 comm_list[i].work_status=0;
 }
 		{
@@ -2434,12 +2423,14 @@ void EXTI15_10_IRQHandler(void)
 {
 if(dis_com==1)
 {
-
+delay_us(1000);//按键消抖
+if(GPIO_ReadInputDataBit(GPIOD,GPIO_Pin_12)==0)
+{
 /*快速控制器手动切 共补*/
 set_74hc273(hand_id, OFF);
- Light_pad_on(dis_com,hand_id,1,1,0);
+Light_pad_on_smartdust(hand_id, 0);
 comm_list[hand_id].work_status=0;
-
+}
 }
 
 
@@ -2456,13 +2447,15 @@ comm_list[hand_id].work_status=0;
 if(dis_com==1)
 {
 
-
-
+delay_us(1000);//按键消抖
+if(GPIO_ReadInputDataBit(GPIOD,GPIO_Pin_14)==0)
+{
 /*快速控制器手动投 共补*/
 
 set_74hc273(hand_id, ON);
- Light_pad_on(dis_com,hand_id,1,1,0);
+Light_pad_on_smartdust(hand_id, 1);
 comm_list[hand_id].work_status=1;
+}
 
 }
 	

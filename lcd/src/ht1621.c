@@ -35,6 +35,8 @@
 //初始化PB4 PB5和PB6为输出口.并使能这PE时钟		    
 //HT1621 IO初始化
 extern u8 L_C_flag_B;
+extern u8 L_C_flag_A;
+extern u8 L_C_flag_C;
 extern u8 COMMCAT_para;
 extern u8 display_nothing_close_open_warn;
 
@@ -269,8 +271,8 @@ if(display_nothing_close_open_warn==1)
   PF_qianfenwei=PF%10;
 
   
-  if(L_C_flag_B==1)WriteAll_1621(22,num1_5Seg+2*PF_zhengshu,2);				//
-	  if(L_C_flag_B==0)Write_1621(23,0x02);	//	负号
+  if(L_C_flag_A==1)WriteAll_1621(22,num1_5Seg+2*PF_zhengshu,2);				//
+	  if(L_C_flag_A==0)Write_1621(23,0x02);	//	负号
    
   WriteAll_1621(20,num12dpSeg+2*PF_shifenwei,2);	//
 WriteAll_1621(18,num1_5Seg+2*PF_baifenwei,2);	
@@ -474,8 +476,8 @@ if(display_nothing_close_open_warn==1)
   PF_qianfenwei=PF%10;
 
   
-  if(L_C_flag_B==1)WriteAll_1621(22,num1_5Seg+2*PF_zhengshu,2);				//
-	  if(L_C_flag_B==0)Write_1621(23,0x02);	//	负号
+  if(L_C_flag_C==1)WriteAll_1621(22,num1_5Seg+2*PF_zhengshu,2);				//
+	  if(L_C_flag_C==0)Write_1621(23,0x02);	//	负号
    
   WriteAll_1621(20,num12dpSeg+2*PF_shifenwei,2);	//
 WriteAll_1621(18,num1_5Seg+2*PF_baifenwei,2);	

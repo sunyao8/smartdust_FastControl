@@ -84,12 +84,12 @@ RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
   	 GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; 
   GPIO_Init(GPIOD, &GPIO_InitStructure);
 
-for(i=1;i<=5;i++)
+
 {
 //	CH452_I2c_WrByte(CH452_RESET,i);
 //	CH452_I2c_WrByte(CH452_NOP,i);
 //	CH452_I2c_WrByte(CH452_CLR_BIT,i);
-	CH452_I2c_WrByte(CH452_SYSON1,i);
+	CH452_I2c_WrByte(CH452_SYSON1,3);
 	//CH452_I2c_WrByte(CH452_TWINKLE,i); 
 //	CH452_I2c_WrByte(CH452_CLR_BIT,i);
 	//CH452_I2c_WrByte(CH452_RESET,i);
@@ -99,26 +99,17 @@ for(i=1;i<=5;i++)
 }
 void init_light_off(void)
 {
-u8 i;
-for(i=1;i<=6;i++)
 {
 
- 	 CH452_I2c_WrByte(CH452_DIG0|OFF_OFF,i);
+ 	 CH452_I2c_WrByte(CH452_DIG0|0,3);
 	 delay_ms(1);
-	 CH452_I2c_WrByte(CH452_DIG1|OFF_OFF,i);
+	 CH452_I2c_WrByte(CH452_DIG1|0,3);
 	 delay_ms(1);
-	 CH452_I2c_WrByte(CH452_DIG2|OFF_OFF,i);
+	 CH452_I2c_WrByte(CH452_DIG2|0,3);
 	 delay_ms(1);
-	 CH452_I2c_WrByte(CH452_DIG3|OFF_OFF,i);
+	 CH452_I2c_WrByte(CH452_DIG3|0,3);
 	 delay_ms(1);
-	 CH452_I2c_WrByte(CH452_DIG4|OFF_OFF,i);
-	 delay_ms(1);
-	 CH452_I2c_WrByte(CH452_DIG5|OFF_OFF,i);
-	 delay_ms(1);
-	 CH452_I2c_WrByte(CH452_DIG6|OFF_OFF,i);
-	 delay_ms(1);
-	 CH452_I2c_WrByte(CH452_DIG7|OFF_OFF,i);
-	 delay_ms(1);
+	
 }
 }
 /************************************************************************
@@ -233,6 +224,54 @@ if(status_2==2){CH452_I2c_WrByte(CH452_CLR_BIT|RED[num],5);CH452_I2c_WrByte(CH45
 
 }
 }
+
+
+void Light_pad_on_smartdust( u8 num,u8 on_off)
+{
+static u8 light1;
+static u8 light2;
+static u8 light3;
+static u8 light4;
+if(num<=8)
+	{
+	if(on_off==1)light1=light1|(0x0001<<(num-1));
+ if(on_off==0)light1=light1&~(0x0001<<(num-1));
+	CH452_I2c_WrByte(CH452_DIG0|light1,3);
+
+    }
+
+if(num>8&&num<=16)
+	{
+	num=num-8;
+	if(on_off==1)light2=light2|(0x0001<<(num-1));
+if(on_off==0)light2=light2&~(0x0001<<(num-1));
+	CH452_I2c_WrByte(CH452_DIG1|light2,3);
+
+
+    }
+if(num>16&&num<=24)
+	{
+		num=num-16;
+	if(on_off==1)light3=light3|(0x0001<<(num-1));
+if(on_off==0)light3=light3&~(0x0001<<(num-1));
+        CH452_I2c_WrByte(CH452_DIG2|light3,3);
+
+    }
+if(num>24&&num<=32)
+{
+	num=num-24;
+if(on_off==1)light4=light4|(0x0001<<(num-1));
+if(on_off==0)light4=light4&~(0x0001<<(num-1));
+	CH452_I2c_WrByte(CH452_DIG3|light4,3);
+
+    }
+
+
+//if(status_1==1){CH452_I2c_WrByte(CH452_SET_BIT,3);CH452_I2c_WrByte(CH452_SET_BIT,3);CH452_I2c_WrByte(CH452_CLR_BIT,3);}
+
+
+}
+
 
 void Light_pad_twinkle(u8 comm_dis ,u8 num,u8 status_1,u8 status_2,u8 status_3,u16 time)
 {
